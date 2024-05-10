@@ -9,6 +9,7 @@ html body {
   height: 100%;
   width: 100%;
   background-color: #efefef;
+  font-family: "Inter", "sans-serif";
   /* font-family: "Open Sans"; */
 }
 header {
@@ -105,19 +106,19 @@ main {
   font-weight: 700;
   color: black;
 }
-.scollD h3{
+.scrollD h3{
   font-family: "Inter", "sans-serif";
   font-weight: 1000;
   margin-top: 3vw;
   font-size: 2vw;
 }
-.scollD svg{
+.scrollD svg{
   margin-top: 3vw;
   width: 40px;
   height: 40px;
   line-height: 100%;
 }
-.scollD{
+.scrollD{
   display: flex;
   justify-content: right;
   margin: 4vw 10vw -5vw 65vw;
@@ -233,10 +234,10 @@ nav .rightNav ul .ri-menu-line{
   font-size: 5rem;
   letter-spacing: -3px;
 }
-.scollD h3{
+.scrollD h3{
   font-size: 1.7rem;
 }
-.scollD svg{
+.scrollD svg{
   font-size: 1.7rem;
 }
 }
@@ -252,10 +253,10 @@ nav .rightNav ul .ri-menu-line{
     display: none;
   }
 
-  nav .login{
+  nav .login a{
     display: flex;
     align-items: center;
-    margin: 0vw 72vw -1.5vw -2vw;
+    margin: -2.5vw 40vw -1.5vw 2vw;
   }
   nav{
     display: flex;
@@ -270,23 +271,136 @@ nav .rightNav ul .ri-menu-line{
 nav .rightNav ul .mainCart{
   margin: 0vw 0vw 0vw -30vw;
 }
-/* nav .rightNav ul .mainCart a{
-  padding: 20vw;
-} */
+nav .rightNav ul .mainCart a{
+  padding: 2vw;
 }
-@media (max-width:600px){
+}
+@media (max-width:601px){
   header{
+    margin-top: 2vw;
+    padding: 2vw;
     width: 95vw;
   }
-  nav .mainCart{
+  nav .rightNav ul .mainCart{
     display: flex;
-    margin: 0vw 0vw 0vw -20vw;
+    margin-left: -65vw;
+    margin-top: 2vw;
   }
   nav .rightNav ul .ri-menu-line{
   font-size: 4vw;
   font-weight: 700;
   display: block;
-  margin: 1.2vw 0vw 0vw 0vw;
+  margin: 0vw 0vw -3vw 0vw;
+}
+.scrollD{
+  display: none;
+}
 }
 
+@media (max-width:516px){
+  header{
+    margin-top: 2vw;
+    padding: 2vw;
+    width: 95vw;
+  }
+  .mainContainer{
+    margin-top: 20vw;
+  }
+  .mainContainer .heading h1 {
+    letter-spacing: -1px;
+    line-height: -2px;
+    font-size: 12vw;
+    font-weight: 800;
+  }
+  nav .rightNav ul .mainCart{
+    display: flex;
+    margin-left: -84vw;
+    margin-top: 2vw;
+  }
+  nav .rightNav ul .ri-menu-line{
+  font-size: 4vw;
+  font-weight: 1000;
+  display: block;
+  margin: 0vw 0vw -3vw 0vw;
+}
+  nav .login a{
+    display: flex;
+    align-items: center;
+    margin: -2.5vw 60vw -1.5vw 2vw;
+  }
+.scrollD{
+  display: none;
+}
+}
+
+@media (max-width: 460px){
+  header{
+    display: flex;
+    margin: 3vw 5vw;
+    padding: 0vw 4vw 0vw 2vw;
+    width: 92vw;
+  }
+  .mainContainer{
+    margin-top: 25vw;
+  }
+  .mainContainer .heading h1 {
+    letter-spacing: 1px;
+    line-height: -2px;
+    font-size: 13vw;
+    font-weight: 800;
+    margin-top: 20vw;
+  }
+  .heading h2{
+    margin-top: 15vw;
+    font-size: 1.8rem;
+  }
+  nav .rightNav ul .mainCart{
+    display: flex;
+    margin-left: -185vw;
+    margin-top: 2vw;
+  }
+  nav .rightNav ul .mainCart a{
+   padding: 1vw 4vw 1vw 4vw; 
+  }
+  nav .rightNav ul .ri-menu-line{
+  font-size: 4vw;
+  font-weight: 1000;
+  display: block;
+  margin: 0vw 0vw -3vw 0vw;
+}
+  nav .login a img{
+    display: flex;
+    margin: -6.5vw 77vw -7.5vw 0vw;
+  }
+.scrollD{
+  display: none;
+}
+.image-one img{
+  height: 32vh;
+  max-height: 400px;
+  max-width: 100%;
+  width: 100vh;
+  transform: translateY(50%);
+}
+.line{
+  display: none;
+}
+.social{
+  display: flex;
+  margin: 0vw 0vw 0vw -85vw;
+}
+.mainS.social .social a .handle-insta .insta,
+.mainS.social .social a .handle-tiktok .tiktok,
+.mainS.social .social a .handle-youtube .youtube {
+  color: white;
+  height: 50px;
+  width: 50px;
+  
+}
+.handle-insta,
+.handle-tiktok,
+.handle-youtube {
+  height: 24px;
+  width: 24px;
+}
 }

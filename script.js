@@ -6,7 +6,8 @@ let cart = document.getElementsByClassName("cartBTN");
 // Animation for first image of the website's Home Page
 const imageContainer = document.querySelector('.image-one img');
 gsap.from(imageContainer, {
-  scale: 1.4,
+  scale: 2,
+  y: -50,
   scrollTrigger: {
     trigger: ".image-one img",
     start: "top bottom",
