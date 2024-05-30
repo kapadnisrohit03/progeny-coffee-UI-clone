@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+html body {
+  height: 100%;
+  width: 100%;
+  background-color: #efefef;
+  font-family: "Inter", "sans-serif"; 
+  
+}
+
+/* Header semantic tag*/
+header {
+  position: relative;
+  display: flex;
+  width: 85vw;
+  justify-content: space-between;
+  margin: 1vw 7vw 0vw 7vw;
+  align-items: center;
+  padding: 0vw 1.5vw -0.5vw 1.5vw;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 9999;
+}
+/* Left nav of navigation bar */
+#leftNav {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+#leftNav a img{
+  margin-left: 2vw;
+}
+
+#mainShop .shop {
+  font-size: 1vw;
+    font-weight: 600;
+    margin-bottom: 0vw;
+    font-family: "Inter";
+    color: black;
+}
+
+/* Parent nav semantic tag */
+nav {
+  display: flex;
+  gap: 2vw;
+  font-family: "Inter";
+  z-index: 9999;
+}
+
+/* Right side of the navigation bar */
+#rightNav {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+/* main navigations */
+#mainNav {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+ul {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Right side of main navigations */
+nav #mainRight{
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  margin-bottom: 1.3vw;
+}
+nav {
+  list-style: none;
+}
+#mainCart{
+  display: flex;
+  align-items: center;
+  padding-top: 1.2vw;
+  margin-left: -1vw;
+}
+#mainCart a {
+  font-family: "Inter", "sans-serif";
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  color: #fff;
+  background-color: black;
+  padding: 0.5vw 2vw .5vw 1vw;
+}
+.navLi, .login{
+  padding-top: 1.5vw;
+}
+.w-commerce-commercecartopenlinkicon path {
+  fill: white;
+}
+
+/* Hamburger Menu */
+nav #rightNav #mainRight #mainHamburger .hamburger{
+  display: none;
+}
+
